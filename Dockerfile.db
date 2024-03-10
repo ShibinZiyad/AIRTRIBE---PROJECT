@@ -1,0 +1,11 @@
+# Use the official MySQL image as the base image
+FROM mysql:8.0
+
+# Set the root password for MySQL
+ENV MYSQL_ROOT_PASSWORD=786313
+
+# Create a database
+ENV MYSQL_DATABASE=airtribe
+
+# Import SQL scripts to create tables and insert test data
+COPY ./db_scripts /docker-entrypoint-initdb.d/
