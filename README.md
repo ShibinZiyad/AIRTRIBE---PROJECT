@@ -121,6 +121,8 @@ POST http://localhost:3000/leads/1/comments
 6.  This will stop and remove the containers.
     docker-compose down
 
+**here the two sql files named create_tables.sql and insert_test_data.sql are inside the file(directory) named db_scripts
+**
 
 
 
